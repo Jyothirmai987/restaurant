@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .nav{
+            height: 100vh;
+            width: 100%;
+            background-image: url("logo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -100px;
+            
+            /* background-attachment: scroll; */
+            top: 0;
+        }
+        .navitems{
+            height: 100px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.51);
+            display: flex;
+            justify-content:end;
+            position: fixed;
+            /* box-shadow: 5px 5px 5px burlywood; */
+            
+        }
+        .navitems a{
+            margin: 50px;
+            text-decoration: none;
+            color: crimson;
+            font-size: 20px;
+            text-shadow: 1px 1px 2px black;
+
+        
+        }
+        .navitems a:hover{
+        
+      scale: 1.5;
+      /* rotate: 360deg; */
+      /* color: red; */
+      box-shadow: 3px 3px 10px 10px plum inset;
+
+      text-shadow: 1px 1px 2px black;
+      filter: blur(0px);
+    }
+ 
+
+ .see input{
+    height: 50px;
+    width: 350px;
+    background-color: black;
+    color: whitesmoke;
+    position: relative;
+    left: 850px;
+    top: 150px;
+    font-size: 30px;
+
+    
+
+ }
+ .timings{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    /* margin: 10px; */
+    font-size: 30px;
+
+ }
+ .menu{
+    height: 100vh;
+    width: 100%;
+    background-image: url("menu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -80px;
+    
+ }
+ .menu h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: deeppink;
+    font-size: 60px;
+ }
+ .starter{
+    display: flex;
+
+    
+ 
+ }
+ .starter input{
+    height: 50px;
+    width: 300px;
+    background-color: black;
+    color: whitesmoke;
+    position: relative;
+    top: 70px;
+    animation: move1 3s ease infinite alternate;
+    
+ }
+ @keyframes move1{
+    from{
+        height: 0;
+        scale: 0.8;
+    }
+    to{
+        height: 50px;
+        scale: 1.2;
+    }
+
+ }
+ .starter input:hover{
+    scale: 1.2;
+    transition: all 3s ease;
+ }
+ #items1{
+    position: relative;
+    top: 130px;
+    right: 300px;
+    /* display: flex; */
+ }
+ #items1:hover{
+    scale: 1.1;
+    transition: all 3s ease;
+ }
+
+.salads{
+    position: relative;
+    display: flex;
+
+}
+.salads:hover{
+    scale: 1.1;
+    transition: all 3s ease;
+}
+.salads input{
+    animation: move2 3s ease infinite alternate;
+}
+@keyframes move2{
+    from{
+        height: 0px;
+        scale: 0.9;
+    }
+    to{
+        height: 50px;
+        scale: 1.2;
+    }
+}
+ 
+ #items2{
+    position: relative;
+    top: 130px;
+    right: 300px;
+    /* display: flex; */
+    
+ }
+ #items2:hover{
+    scale: 1.2;
+    transition: all 3s ease;
+    display: inline;
+ }
+ #items3{
+    position: relative;
+    top: 80px;
+    /* right: 30px; */
+    left: 30px;
+    /* display: flex; */
+
+
+
+ }
+
+
+ #items3 a{
+    text-decoration: none;
+ }
+ .food_items input:hover{
+    scale: 1.2;
+    transition: all 3s ease;
+
+ }
+ .food_items input{
+    animation: move3 3s ease infinite alternate;
+ }
+ @keyframes move3{
+    from{
+        height: 0px;
+        scale: 0.8;
+    }
+    to{
+        height: 50px;
+        scale: 1.2;
+    }
+ }
+ #items3:hover{
+    scale: 1.2;
+    transition: all 3s ease;
+ }
+ #about{
+    height: 100vh;
+    width: 100%;
+    /* background-image: url("about.webp"); */
+    background-color: aqua;
+ }
+ #about h1{
+    justify-content: center;
+    display: flex;
+    font-size: 60px;
+    color: deeppink;
+ }
+ .para{
+            width: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 100px;
+            left: 700px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 800;    
+        }
+ .img1{
+        border-radius: 50%;
+       position: relative;
+       left: 750px;
+       top: 100px;
+    }
+.img2{
+    border-radius: 50%;
+    position: relative;
+    right: 300px;
+    top: -250px;
+}
+
+
+
+
+.img5{
+    border-radius: 50%;
+    position: relative;
+    top: -240px;
+    left: 600px;
+}
+.img6{
+    border-radius: 50%;
+    position: relative;
+    top: 150px;
+    /* left: 10px; */
+    right: 20px;
+    
+}
+.img7{
+    border-radius: 50%;
+    position: relative;
+    left: 290px;
+    top: -250px;
+
+}
+#contact{
+    height: 100vh;
+    width: 100%;
+    background-color: darkslategrey;
+}
+#contact h1{
+    font-size: 80px;
+    color: deeppink;
+    display: flex;
+    justify-content: center;
+}
+.details p{
+    position: relative;
+    left: 250px;
+    top: 170px;
+    /* font-size: 35px; */
+}
+.p1{
+    font-size: 30px;
+}
+.enter{
+    width: 800px;
+    height: 50px;
+    position: relative;
+    left: 250px;
+    top: 190px;
+}
+.name{
+    width: 800px;
+    height: 50px;
+
+}
+.people{
+    width: 800px;
+    height: 50px;
+}
+.datee{
+    width: 800px;
+    height: 50px;
+    
+}
+.req{
+    width: 800px;
+    height: 50px;
+}
+.msg{
+    width: 800px;
+    height: 50px;
+}
+ 
+
+ 
+    
+    </style>
+</head>
+<body>
+    <!-- home page starts -->
+    
+    <div class="nav" id="home">
+        <div class="navitems">
+            <a href="#home">HOME</a>
+            <a href="#menuu">MENU</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    
+    
+    <div class="see">
+        <form action="#menuu">
+        <input type="submit" value="LET ME SEE THE MENU">
+        </form>
+    </div>
+    <div class="timings">
+        <marquee behavior="alternate" direction="">Open From 10am to 6pm</marquee>
+    </div>
+</div>
+
+    <!-- home page ends... -->
+    <!-- menu starts -->
+    <div class="menu" id="menuu">
+        <h1>MENU ITEMS</h1>
+        <div class="starter">
+            <form action="#items1">
+                
+            <input type="submit" value="STARTERS">
+            </form>
+            <div id="items1">
+                <table>
+                    <tr>
+                        <th style="color: brown; font-size: 30px;">ITEMS</th>
+                        <th style="color: brown; font-size: 30px;">PRICE</th>
+                    </tr>
+                    <tr>
+                
+                        
+                <ul>
+                    <tr>
+                    <td><li>Chicken Tandoori</li></td>
+                    <td>400</td>
+                    </tr>
+                    <tr>
+                    <td><li>Samosa Recipe</li></td>
+                    <td>200</td>
+                    </tr>
+                    <tr>
+                    <td><li>Papdi Chaat</li></td>
+                        <td>150</td>
+                        </tr>
+                      <tr>  
+                    <td><li>Sev Puri</li></td>
+                        <td>120</td>
+                        </tr>
+                        <tr>
+                    <td><li>Paneer Pakora</li></td>
+                        <td>270</td>
+                        </tr>
+                        <tr>
+                    <td><li>Methi Bajri Vada</li></td>
+                        <td>80</td>
+                        </tr>
+                        <tr>
+                    <td><li>Chicken Spring Rolls</li></td>
+                        <td>450</td>
+                        </tr>
+                        <tr>
+                    <td><li>Chilli Prawns</li></td>
+                        <td>700</td>
+                        </tr>
+                        <tr>
+                    <td><li>Keema Samosa</li></td>
+                        <td>430</td>
+                        </tr>
+                        <tr>
+                    <td><li>Chicken Manchurian</li></td>
+                        <td>370</td>
+                        </tr>
+                        <tr>
+                    <td><li>Fish Fry</li></td>
+                        <td>140</td>
+                        </tr>
+                        <tr>
+                    <td><li>Butter Chicken</li></td>
+                        <td>360</td>
+                        </tr>
+                        <tr>
+                    <td><li>chicken Lollipop</li></td>
+                        <td>310</td>
+                        </tr>
+                        <tr>
+                    <td><li>Pepper Chicken</li></td>
+                        <td>280</td>
+                        </tr>
+                        <tr>
+                    <td><li>Momos</li></td>
+                        <td>180</td>
+                        </tr>
+                </ul>
+                </tr>
+                </table>
+            
+            </div>
+            <div class="salads">
+                <form action="#items2">
+                    
+                <input type="submit" value="SALADS">
+                </form>
+                <div id="items2">
+                    <table>
+                        <tr>
+                            <th style="color: brown; font-size: 30px; position: relative; right: 70px;">ITEMS</th>
+                            <th style="color: brown; font-size: 30px;">PRICE</th>
+                        </tr>
+                        <tr>
+                    
+                            
+                    <ul>
+                        <tr>
+                        <td><li>Mixed Fruit Salad </li></td>
+                        <td>230</td>
+                        </tr>
+                        <tr>
+                        <td><li>Vegetable saladFiesta Chopped Salad</li></td>
+                        <td>180</td>
+                        </tr>
+                        <tr>
+                        <td><li>Avocado Salad</li></td>
+                            <td>320</td>
+                            </tr>
+                          <tr>  
+                        <td><li> Asian Coleslaw</li></td>
+                            <td>650</td>
+                            </tr>
+                            <tr>
+                        <td><li>Honey Dijon Bean Salad</li></td>
+                            <td>270</td>
+                            </tr>
+                            <tr>
+                        <td><li>Carrot Salad</li></td>
+                            <td>120</td>
+                            </tr>
+                            <tr>
+                        <td><li>Street Corn Salad</li></td>
+                            <td>175</td>
+                            </tr>
+                            <tr>
+                        <td><li>Paneer Cheese Salad</li></td>
+                            <td>640</td>
+                            </tr>
+                            <tr>
+                        <td><li>Moong Salad</li></td>
+                            <td>630</td>
+                            </tr>
+                            <tr>
+                        <td><li>Chicken Chilly Salad</li></td>
+                            <td>870</td>
+                            </tr>
+                            <tr>
+                        <td><li>Greens Salad</li></td>
+                            <td>430</td>
+                            </tr>
+                            <tr>
+                        <td><li>Tomato Salad</li></td>
+                            <td>100</td>
+                            </tr>
+                            <tr>
+                        <td><li>Mango Salad</li></td>
+                            <td>60</td>
+                            </tr>
+                            <tr>
+                        <td><li>IceCream Fruit Salad</li></td>
+                            <td>140</td>
+                            </tr>
+                            <tr>
+                        <td><li>Blue Lime</li></td>
+                            <td>80</td>
+                            </tr>
+                    </ul>
+                    </tr>
+                    </table>
+                
+                </div>
+        </div>
+
+        <div class="food_items">
+            <form action="#items3">
+                
+                
+                
+            <input type="submit" value="FOOD ITEMS">
+            </form>
+            <div id="items3">
+                <table>
+                    <tr>
+                        <th style="color: brown; font-size: 30px; position: relative;right: 15px;">ITEMS</th>
+                        <th style="color: brown; font-size: 30px;">PRICE</th>
+                    </tr>
+                    <tr>
+                
+                        
+                <ul>
+                    <tr>
+                    <td><li><a href="mutton_soup.webp">Mutton Soup</a> </li></td>
+                    <td>550/</td>
+                    </tr>
+                    <tr>
+                    <td><li><a href="chicken_chetinad.jpg">Chicken Chettinad</a></li></td>
+                    <td>340/</td>
+                    </tr>
+                    <tr>
+                    <td><li><a href="sarson.jpg">Sarson Machhi</a></li></td>
+                        <td>290/</td>
+                        </tr>
+                      <tr>  
+                    <td><li> <a href="asian.jpg">Asian Coleslaw</a></li></td>
+                        <td>699/</td>
+                        </tr>
+                        <tr>
+                    <td><li><a href="butter.jpg">Butter Chicken</a></li></td>
+                        <td>420/</td>
+                        </tr>
+                        <tr>
+                    <td><li><a href="mutton_mughal.webp">Mughal Mutton Curry</a></li></td>
+                        <td>690/</td>
+                        </tr>
+                        <tr>
+                    <td><li><a href="tunde.jpg">Tunde Kebab</a></li></td>
+                        <td>390/</td>
+                        </tr>
+                        <tr>
+                    <td><li><a href="bheja.jpg">Bheja Masala</a></li></td>
+                        <td>310/</td>
+                        </tr>
+                        <tr>
+                    <td><li><a href="rogan.webp">Rogan Josh</a></li></td>
+                        <td>220/</td>
+                        </tr>
+                        <tr>
+                    <td><li><a href="kankanda.jpg">Kankada Jhola</a></li></td>
+                        <td>440/</td>
+                        </tr>
+                        <tr>
+                    <td><li><a href="butter.jpg">Keema Matar</a></li></td>
+                        <td>290/</td>
+                        </tr>
+                        <tr>
+                    <td><li><a href="haleem.webp">Haleem</a></li></td>
+                        <td>245/</td>
+                        </tr>
+                        <tr>
+                    <td><li><a href="musallam.jpg">Murgh Musallam</a></li></td>
+                        <td>605/</td>
+                        </tr>
+                        <tr>
+                    <td><li><a href="pork.jpg">Pork Vindaloo</a></li></td>
+                        <td>375/</td>
+                        </tr>
+                        <tr>
+                    <td><li><a href="rista.jpg">Rista</a></li></td>
+                        <td>299/</td>
+                        </tr>
+                </ul>
+                </tr>
+                </table>
+            
+            </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- menu ends....... -->
+    <!-- about starts -->
+    <div id="about">
+        <h1>About My Restaurant</h1>
+        <div class="para1">
+            <p justify="center" class="para">My Restaurant could serve food that is not found anywhere else, it could have an atmosphere that is different from other restaurants, or it could offer a service that is not offered at other restaurant.My  restaurant maintains a high standard for the quality of its food and makes sure that each meal is of the same quality. Serving delicious meals can help your restaurant develop a positive image and encourage repeat business from customers. Top-notch ingredients and a talented chef are required to continuously deliver exceptional meals. To guarantee that diners consistently receive their meal exactly as they ordered them, a good cook pays attention to your visitors’ wants and gets along well with the kitchen staff.</p><br><br>
+
+
+        </div>
+        <div class="img">
+            <img src="about.webp" alt="" class="img1" height="400px" width="400px">
+            <img src="menu1.jpg" alt="" class="img2"  height="400px" width="400px">
+            <!-- <img src="menu2.jpg" alt="" class="img3"  height="400px" width="400px"> -->
+            <!-- <img src="menu3.jpg" alt="" class="img4"  height="400px" width="400px"> -->
+            <img src="menu4.jpg" alt="" class="img5"  height="400px" width="400px">
+            <img src="menu5.jpg" alt="" class="img6"  height="400px" width="400px">
+            <img src="menu6.jpg" alt="" class="img7"  height="400px" width="400px">
+            
+        </div>
+
+    </div>
+    <!-- about ends -->
+    <!-- contacts starts -->
+    <div id="contact">
+        <h1><u>Contact Details</u></h1>
+        <div class="details">
+            <p>FIND US IN BASAVANGUDI IN BANAGALORE CALL US AT------ 9391751967 <br>WE OFFER FULL-SERVICE CATERING FOR ANY EVENT, LARGE OR SMALL WE UNDERSTAND YOUR NEEDS AND WE WILL CATER THE FOOD TO SATISFY THE BIGGEST CRITERIA OF THEM ALL, BOTH LOOK AND TASTE</p> <br>
+            <p class="p1"> RESERVE A TABLE,ASK FOR TODAYS'S SPECIAL OR JUST SEND US A MESSAGE:</p>
+            <div class="enter">
+            <form action="">
+            <input type="text" placeholder="NAME" class="name"> <br> <br><br>
+            <input type="text" placeholder="HOW MANY PEOPLE" class="people" ><br><br><br>
+            <input type="date" name="" id="" class="datee"> <br><br><br>
+            <input type="text" placeholder="SPECIAL REQUIREMENTS" class="req"> <br><br><br>
+            <input type="submit" value="SEND MESSAGE" class="msg">
+            </form>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- contacts ends -->
+</body>
+</html>
